@@ -7,7 +7,7 @@
   }
   header {
     font-size: 90px;
-    margin-bottom: 5px;
+    margin: 10px;
   }
   div:hover > .deleteButton {
     visibility: visible;
