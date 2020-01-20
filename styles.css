@@ -1,0 +1,244 @@
+/* Desktop */
+@media only screen and (min-width: 961px) {
+  body,
+  html {
+    background-size: cover;
+    background-size: 100%;
+  }
+  header {
+    font-size: 90px;
+  }
+  div:hover > .deleteButton {
+    visibility: visible;
+  }
+  .deleteButton {
+    visibility: hidden;
+    margin: 15px;
+    height: 40px;
+  }
+  #container > div {
+    margin: 5px;
+    width: 230px;
+    height: 350px;
+  }
+  main {
+    height: 81%;
+  }
+  #form {
+    width: 60%;
+  }
+  #footer {
+    height: 6%;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  #footer #logos a img {
+    width: 35px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+/* Mobiles */
+@media only screen and (max-width: 400px) {
+  .deleteButton {
+    margin: 15px;
+    height: 20px;
+  }
+  #form {
+    width: 80%;
+  }
+  main {
+    height: 79%;
+    overflow: auto;
+  }
+
+  #footer {
+    height: 8%;
+    font-size: 12px;
+  }
+  header {
+    font-size: 50px;
+  }
+  #container > div {
+    margin: 9px;
+    width: 160px;
+    height: 250px;
+  }
+  #footer #logos a img {
+    width: 16px;
+    height: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  div:hover > .deleteButton {
+    visibility: visible;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .deleteButton {
+    visibility: hidden;
+    margin: 15px;
+    height: 20px;
+  }
+  #footer #logos a img {
+    width: 18px;
+    height: 22px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  #form {
+    width: 70%;
+  }
+  header {
+    font-size: 60px;
+  }
+  #container > div {
+    margin: 15px;
+    width: 160px;
+    height: 250px;
+  }
+  main {
+    height: 79%;
+    overflow: auto;
+  }
+  #footer {
+    height: 8%;
+    font-size: 16px;
+  }
+}
+
+/* Default */
+body,
+html {
+  background-image: url("Assets/images/backToSchool.jpg");
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
+header {
+  color: black;
+  font-weight: 400;
+  font-family: SchoolHolic;
+  text-align: center;
+  height: 13%;
+}
+
+@font-face {
+  src: url("Assets/fonts/School\ Holic\ 2.otf");
+  font-family: SchoolHolic;
+}
+
+#table {
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+#container {
+  height: 70%;
+}
+
+#container > div {
+  background-image: url("Assets/images/notebg.png");
+  background-size: cover;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.deleteButton {
+  top: 15px;
+  right: 2px;
+  position: absolute;
+  color: darkred;
+  background: none;
+  border: none;
+}
+
+.description {
+  height: 80%;
+  width: 130px;
+  overflow: auto;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.date {
+  padding: 15px;
+}
+
+.time {
+  position: absolute;
+  top: 85%;
+  padding: 15px;
+}
+
+#form {
+  background-image: linear-gradient(#f3f3f3, white);
+  box-shadow: 2px 2px 2px 2px rgb(84, 85, 85);
+  border-radius: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  overflow: auto;
+}
+
+label {
+  font-size: 23px;
+}
+
+.dateZone,
+.timeZone,
+.buttons {
+  display: inline-block;
+  overflow: auto;
+  margin: 3px;
+}
+
+#time,
+#date {
+  padding: 3%;
+}
+
+input[type="date"],
+input[type="time"],
+#description {
+  font-size: 20px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  box-shadow: 0px -10px 20px 5px rgba(0, 0, 0, 0.7),
+    inset 0px -5px 13px 5px gray;
+  border-top: 4px solid #41403e;
+  background-color: darkgray;
+}
+
+#footer #logos {
+  float: right;
+}
+
+#footer #logos a img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="loadNotes(),pastDate()"></body>
+
+<header>
+    My task board
+</header>
+
+<main>
+    <div id="insertContent">
+
+        <form>
+            <div id="form">
+                <label>Description:</label>
+                <textarea id="description" cols="30" rows="3" class="form-control" autofocus required></textarea>
+
+                <div class="dateZone">
+                    <label>Date:</label>
+                    <input type="date" id="date" class="form-control datepicker" required>
+                </div>
+                <div class="timeZone">
+                    <label>Time:</label>
+                    <input type="time" id="time" class="form-control">
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-primary btn-lg" type="button" onclick="getInfo()">Add Note</button>
+                    <button class="btn btn-danger btn-lg" type="reset">Clear</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+    <div id="container" class="fadeIn">
+    </div>
+</main>
+
+<div id="footer">
+    &copy;All Rights reserved to Daphne Levy
+    <div id="logos">
+        <a target="_blank" href="https://github.com/daph87">
+            <img src="./assets/images/github_black.png" alt="link">
+        </a>
+        <a target="_blank" href="mailto: 87daphnelevy@gmail.com">
+            <img src="./assets/images/gmail.png" alt="link">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/daphne-levy-622349198/">
+            <img src="./assets/images/linkedin.png" alt="link">
+        </a>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
