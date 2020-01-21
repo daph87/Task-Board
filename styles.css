@@ -113,7 +113,7 @@
 /* Default */
 body,
 html {
-  background-image: url("Assets/images/backToSchool.jpg");
+  background-image: url("assets/images/backToSchool.jpg");
   height: 100%;
   margin: 0;
   padding: 0;
@@ -129,7 +129,7 @@ header {
 }
 
 @font-face {
-  src: url("Assets/fonts/School\ Holic\ 2.otf");
+  src: url("assets/fonts/School\ Holic\ 2.otf");
   font-family: SchoolHolic;
 }
 
@@ -144,7 +144,7 @@ header {
 }
 
 #container > div {
-  background-image: url("Assets/images/notebg.png");
+  background-image: url("assets/images/notebg.png");
   background-size: cover;
   padding: 20px;
   display: inline-block;
