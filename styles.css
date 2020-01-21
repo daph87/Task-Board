@@ -221,7 +221,7 @@ input[type="date"],
 input[type="time"],
 #description {
   font-size: 20px;
-  margin: 2px;
+  margin-top: 2px;
 }
 
 #footer {
