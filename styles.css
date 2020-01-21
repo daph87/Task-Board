@@ -218,10 +218,12 @@ label {
 }
 
 input[type="date"],
-input[type="time"],
-#description {
-  font-size: 20px;
-  margin-top: 2px;
+input[type="time"] {
+  font-size: 18px;
+}
+
+#description{
+  font-size : 20px;
 }
 
 #footer {
